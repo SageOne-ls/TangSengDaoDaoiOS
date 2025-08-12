@@ -97,10 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../Modules/WuKongFile/WuKongFile.framework/WuKongFile_images.bundle"
+  install_resource "${PODS_ROOT}/../Modules/WuKongAdvanced/WuKongAdvanced.framework/WuKongAdvanced_images.bundle"
+  install_resource "${PODS_ROOT}/../Modules/WuKongAdvanced/WuKongAdvanced.framework/WuKongAdvanced_resources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../Modules/WuKongFile/WuKongFile.framework/WuKongFile_images.bundle"
+  install_resource "${PODS_ROOT}/../Modules/WuKongAdvanced/WuKongAdvanced.framework/WuKongAdvanced_images.bundle"
+  install_resource "${PODS_ROOT}/../Modules/WuKongAdvanced/WuKongAdvanced.framework/WuKongAdvanced_resources.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

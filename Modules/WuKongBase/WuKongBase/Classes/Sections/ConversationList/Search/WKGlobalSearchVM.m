@@ -294,7 +294,7 @@
             NSString *fromUid = @"";
             NSNumber *channelType = @(0);
             NSNumber *timestamp = message[@"timestamp"]?:@(0);
-            if(message[@"channel"]) {
+            if(message[@"channel"] && message[@"channel"] != [NSNull null]) {
                 channelId = message[@"channel"][@"channel_id"];
                 channelType = message[@"channel"][@"channel_type"];
             }
