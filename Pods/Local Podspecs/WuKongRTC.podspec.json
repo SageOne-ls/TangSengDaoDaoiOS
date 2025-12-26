@@ -1,0 +1,67 @@
+{
+  "name": "WuKongRTC",
+  "version": "0.1.0",
+  "summary": "A short description of WuKongRTC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/3895878/WuKongRTC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tangtaoit": "tt@wukong.ai"
+  },
+  "source": {
+    "git": "https://github.com/tangtaoit/WuKongRTC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "libraries": [
+    "c++",
+    "stdc++"
+  ],
+  "vendored_frameworks": [
+    "WuKongRTC/RTC/framework/WebRTC.framework",
+    "WuKongRTC/RTC/framework/OWT.framework"
+  ],
+  "vendored_libraries": "WuKongRTC/RTC/lib/libsioclient_tls_no_verification.a",
+  "preserve_paths": "WuKongRTC/RTC/lib/libsioclient_tls_no_verification.a",
+  "source_files": "WuKongRTC/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "AVFoundation",
+    "AudioToolbox",
+    "VideoToolbox",
+    "CoreMedia",
+    "CoreVideo"
+  ],
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO",
+    "OTHER_LDFLAGS": [
+      "-ObjC",
+      "-ld64",
+      "-lc++",
+      "-lstdc++"
+    ],
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
+    "CLANG_CXX_LIBRARY": "libc++",
+    "LIBRARY_SEARCH_PATHS": "$(PODS_TARGET_SRCROOT)/WuKongRTC/RTC/lib"
+  },
+  "resource_bundles": {
+    "WuKongRTC_images": [
+      "WuKongRTC/Assets/Images.xcassets"
+    ],
+    "WuKongRTC_resources": [
+      "WuKongRTC/Assets/Others"
+    ]
+  },
+  "resources": [
+    "WuKongRTC/Assets/Lang"
+  ],
+  "dependencies": {
+    "WuKongBase": [],
+    "Socket.IO-Client-Swift": []
+  }
+}

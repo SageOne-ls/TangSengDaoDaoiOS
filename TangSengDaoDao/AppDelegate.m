@@ -16,7 +16,9 @@
 #import "SELUpdateAlert.h"
 
 
-#define SERVER_IP @"api.botgate.cn" // xxx.xxx.xx.xx:8090
+#define SERVER_IP @"api.zoomxhh.com" // 服务器地址（测试地址）
+// #define SERVER_IP @"tsdd-server.bcbx.cc" // 服务器地址（测试地址）
+
 #define HTTPS_ON true // https开关
 
 
@@ -65,8 +67,19 @@
     config.fileBrowseUrl = FILE_BROWSE_URL; // 文件预览地址
     config.imageBrowseUrl = IMAGE_BROWSE_URL; // 图片预览地址
     config.reportUrl = [NSString stringWithFormat:@"%@report/html",API_BASE_URL]; //举报地址
-    config.privacyAgreementUrl = [NSString stringWithFormat:@"%@privacy_policy.html",WEB_URL]; //隐私协议
-    config.userAgreementUrl = [NSString stringWithFormat:@"%@user_agreement.html",WEB_URL]; //用户协议
+    config.privacyAgreementUrl = @"https://api.zoomxhh.com/web/privacy_policy.html"; //隐私协议
+    config.userAgreementUrl = @"https://api.zoomxhh.com/web/user_agreement.html"; //用户协议
+//    石头, [2025/12/25 20:42]
+//    https://api.zoomxhh.com/web/privacy_policy.html
+//
+//    石头, [2025/12/25 20:42]
+//    https://api.zoomxhh.com/web/user_agreement.html
+    // RTC ICE 服务器配置（TURN 服务器 - 测试环境）///turn:turn.zoomxhh.com:3478?transport=udp //turn:turn.zoomxhh.com:3478?transport=udp 正式
+    WKRTCIceServer *iceServer = [[WKRTCIceServer alloc] initWithURLStrings:@[@"turn:turn.zoomxhh.com:3478?transport=udp"]
+                                                                    username:@"unplanned"
+                                                                  credential:@"WqZVmn48lPfVnK"];
+    config.rtcIces = @[iceServer];
+    
     [WKApp shared].config = config;
     
     // app首页设置

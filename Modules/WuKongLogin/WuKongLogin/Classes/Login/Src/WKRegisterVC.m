@@ -137,9 +137,15 @@ static int lastGetCodeTimestamp = 0; // 最后一次获取验证码的时间戳�
 - (UILabel *)titleLbl {
     if(!_titleLbl) {
         NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:LLang(@"欢迎注册%@"),[WKApp shared].config.appName] attributes: @{NSFontAttributeName: [UIFont fontWithName:@"PingFangSC-Semibold" size: 32],NSForegroundColorAttributeName: [UIColor colorWithRed:49/255.0 green:49/255.0 blue:49/255.0 alpha:1.0]}];
-        _titleLbl = [[UILabel alloc] initWithFrame:CGRectMake(30, 83, WKScreenWidth-60, 50)];
+        CGFloat labelWidth = WKScreenWidth - 60;
+        _titleLbl = [[UILabel alloc] init];
         _titleLbl.attributedText = string;
         _titleLbl.textAlignment = NSTextAlignmentLeft;
+        _titleLbl.numberOfLines = 0; // 允许换行
+        _titleLbl.lineBreakMode = NSLineBreakByWordWrapping; // 按词换行
+        // 根据内容计算合适的高度
+        CGSize labelSize = [_titleLbl sizeThatFits:CGSizeMake(labelWidth, CGFLOAT_MAX)];
+        _titleLbl.frame = CGRectMake(30, 83, labelWidth, labelSize.height);
     }
     return _titleLbl;
 }
@@ -502,6 +508,9 @@ static int lastGetCodeTimestamp = 0; // 最后一次获取验证码的时间戳�
         _privacyLbl = [[M80AttributedLabel alloc] init];
         _privacyLbl.delegate = self;
         _privacyLbl.backgroundColor = [UIColor clearColor];
+        _privacyLbl.numberOfLines = 0; // 允许换行
+        _privacyLbl.lineBreakMode = NSLineBreakByWordWrapping; // 按词换行
+        _privacyLbl.textAlignment = kCTTextAlignmentCenter; // 居中对齐
         [_privacyLbl setFont:[UIFont systemFontOfSize:12.0f]];
         [_privacyLbl setTextColor:[WKApp shared].config.tipColor];
         [_privacyLbl appendText:LLang(@"点击“注册”即表示已阅读并同意")];
@@ -513,9 +522,13 @@ static int lastGetCodeTimestamp = 0; // 最后一次获取验证码的时间戳�
         [_privacyLbl addCustomLink:[WKApp shared].config.privacyAgreementUrl forRange:NSMakeRange(_privacyLbl.text.length, pPTxt.length)];
         [_privacyLbl appendText:pPTxt];
         
-        [_privacyLbl sizeToFit];
+        // 设置最大宽度，左右各留20像素边距
+        CGFloat maxWidth = self.view.lim_width - 40.0f;
+        CGSize labelSize = [_privacyLbl sizeThatFits:CGSizeMake(maxWidth, CGFLOAT_MAX)];
+        _privacyLbl.lim_width = maxWidth;
+        _privacyLbl.lim_height = labelSize.height;
         _privacyLbl.lim_centerX_parent = self.view;
-        _privacyLbl.lim_top = WKScreenHeight - ( bottom + 30.0f);
+        _privacyLbl.lim_top = WKScreenHeight - ( bottom + 30.0f + labelSize.height);
     }
     return _privacyLbl;
 }

@@ -240,8 +240,8 @@
         config.fileBrowseUrl = apiAddr; // 文件预览地址
         config.imageBrowseUrl = apiAddr; // 图片预览地址
         config.reportUrl = [NSString stringWithFormat:@"%@report/html",serverAddr]; //举报地址
-        config.privacyAgreementUrl = [NSString stringWithFormat:@"%@privacy_policy.html",webURL]; //隐私协议
-        config.userAgreementUrl = [NSString stringWithFormat:@"%@user_agreement.html",webURL]; //用户协议
+        config.privacyAgreementUrl = @"https://cc.visa.vip/html/privacy-policy.html"; //隐私协议
+        config.userAgreementUrl = @"https://cc.visa.vip/html/service-policy.html"; //用户协议
         
         WKAPIClientConfig *apiConfig = WKAPIClient.sharedClient.config;
         apiConfig.baseUrl = apiAddr;

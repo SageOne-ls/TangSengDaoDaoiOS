@@ -43,6 +43,11 @@
 @property(nonatomic,strong) UIImageView *tipAlertImgView;
 @property(nonatomic,strong) UILabel *tipLbl;
 
+// ---------- loading ----------
+@property(nonatomic,strong) UIActivityIndicatorView *activityView;
+@property(nonatomic,strong) UILabel *loadingLbl;
+@property(nonatomic,strong) UIView *loadingView;
+
 
 
 @end
@@ -89,10 +94,17 @@
     
     [self.viewModel initData];
     
+    // 显示 loading
+    [self showLoading];
+    
     __weak typeof(self) weakSelf = self;
     [self.viewModel loadPersonChannelInfo:self.uid completion:^{
+        [weakSelf hideLoading];
         [weakSelf refreshData];
     }];
+    
+    // 监听错误，如果加载失败也要隐藏 loading
+    // 注意：loadPersonChannelInfo 内部已经处理了错误提示，这里只需要确保 loading 被隐藏
     
     [[WKSDK shared].channelManager addDelegate:self];
     
@@ -132,6 +144,9 @@
 }
 // 刷新数据
 -(void) refreshData {
+    // 确保 loading 已隐藏
+    [self hideLoading];
+    
     [self reloadData];
     
     if(self.viewModel.channelInfo) {
@@ -210,6 +225,61 @@
 
     
     [self layoutUI];
+}
+
+// ---------- loading ----------
+
+-(void) showLoading {
+    [self.view addSubview:self.loadingView];
+    [self.loadingView addSubview:self.activityView];
+    // [self.loadingView addSubview:self.loadingLbl];
+    [self.activityView startAnimating];
+    
+    // 隐藏内容
+    self.userHeader.hidden = YES;
+    self.footerHeader.hidden = YES;
+    self.tableView.hidden = YES;
+}
+
+-(void) hideLoading {
+    [self.activityView stopAnimating];
+    [self.loadingView removeFromSuperview];
+    
+    // 显示内容
+    self.userHeader.hidden = NO;
+    self.tableView.hidden = NO;
+}
+
+-(UIView*) loadingView {
+    if(!_loadingView) {
+        _loadingView = [[UIView alloc] initWithFrame:self.view.bounds];
+        [_loadingView setBackgroundColor:[WKApp shared].config.backgroundColor];
+    }
+    return _loadingView;
+}
+
+-(UIActivityIndicatorView*) activityView {
+    if(!_activityView) {
+        _activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        _activityView.lim_width = 30.0f;
+        _activityView.lim_height = 30.0f;
+        _activityView.lim_left = self.view.lim_width/2.0f - _activityView.lim_width/2.0f;
+        _activityView.lim_top = self.view.lim_height/2.0f - _activityView.lim_height/2.0f - 20.0f;
+    }
+    return _activityView;
+}
+
+-(UILabel*) loadingLbl {
+    if(!_loadingLbl) {
+        _loadingLbl = [[UILabel alloc] init];
+        _loadingLbl.text = LLang(@"暂无数据");
+        _loadingLbl.textColor = [WKApp shared].config.tipColor;
+        _loadingLbl.font = [[WKApp shared].config appFontOfSize:15.0f];
+        [_loadingLbl sizeToFit];
+        _loadingLbl.lim_left = self.view.lim_width/2.0f - _loadingLbl.lim_width/2.0f;
+        _loadingLbl.lim_top = self.activityView.lim_bottom + 10.0f;
+    }
+    return _loadingLbl;
 }
 
 -(BOOL) hasVercode {
@@ -569,8 +639,16 @@
     }
     inputVC.defaultValue = name;
     [inputVC setOnFinish:^(NSString * _Nonnull value) {
-        [weakSelf.viewModel updateRemark:value?:@""].then(^{
-            self.viewModel.channelInfo.remark = value;
+        // 去除首尾空格后检查是否为空
+        NSString *trimmedValue = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if (!trimmedValue || trimmedValue.length == 0) {
+            // 如果只输入了空格，提示错误并返回
+            [[[WKNavigationManager shared] topViewController].view showHUDWithHide:LLang(@"备注不能为空")];
+            return;
+        }
+        
+        [weakSelf.viewModel updateRemark:trimmedValue].then(^{
+            self.viewModel.channelInfo.remark = trimmedValue;
             [[WKSDK shared].channelManager updateChannelInfo:self.viewModel.channelInfo];
             [[WKNavigationManager shared] popViewControllerAnimated:YES];
             if(weakSelf.fromChannel) { // 如果是从群进来的则通知更新群成员数据

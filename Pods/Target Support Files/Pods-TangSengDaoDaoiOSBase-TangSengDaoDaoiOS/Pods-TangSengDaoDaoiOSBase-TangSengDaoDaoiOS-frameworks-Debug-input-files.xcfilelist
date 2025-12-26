@@ -31,8 +31,13 @@ ${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
 ${BUILT_PRODUCTS_DIR}/WuKongBase/WuKongBase.framework
 ${BUILT_PRODUCTS_DIR}/WuKongContacts/WuKongContacts.framework
 ${BUILT_PRODUCTS_DIR}/WuKongDataSource/WuKongDataSource.framework
+${BUILT_PRODUCTS_DIR}/WuKongGroupManager/WuKongGroupManager.framework
 ${BUILT_PRODUCTS_DIR}/WuKongIMSDK/WuKongIMSDK.framework
 ${BUILT_PRODUCTS_DIR}/WuKongLogin/WuKongLogin.framework
+${BUILT_PRODUCTS_DIR}/WuKongMoment/WuKongMoment.framework
+${PODS_ROOT}/../Modules/WuKongRTC/WuKongRTC/RTC/framework/WebRTC.framework
+${BUILT_PRODUCTS_DIR}/WuKongRTC/WuKongRTC.framework
+${BUILT_PRODUCTS_DIR}/WuKongSmallVideo/WuKongSmallVideo.framework
 ${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework
 ${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework
 ${BUILT_PRODUCTS_DIR}/ZLImageEditor/ZLImageEditor.framework

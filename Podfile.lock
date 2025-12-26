@@ -112,6 +112,9 @@ PODS:
   - WuKongDataSource (0.1.0):
     - WuKongBase
     - WuKongIMSDK
+  - WuKongGroupManager (0.1.0):
+    - WuKongBase
+    - WuKongIMSDK
   - WuKongIMSDK (1.1.0):
     - 25519 (~> 2.0.2)
     - CocoaAsyncSocket (~> 7.6.5)
@@ -121,6 +124,17 @@ PODS:
     - PromiseKit/CorePromise (~> 6.0)
     - SDWebImage (~> 5.9.1)
     - WuKongBase
+  - WuKongMoment (0.1.0):
+    - SDWebImage (~> 5.9.1)
+    - WuKongBase
+    - WuKongIMSDK
+  - WuKongRTC (0.1.0):
+    - Socket.IO-Client-Swift
+    - WuKongBase
+  - WuKongSmallVideo (0.1.0):
+    - PromiseKit/CorePromise (~> 6.0)
+    - WuKongBase
+    - WuKongIMSDK
   - YBImageBrowser/NOSD (3.0.9):
     - YYImage
   - YYImage (1.0.4):
@@ -146,8 +160,12 @@ DEPENDENCIES:
   - WuKongBase (from `./Modules/WuKongBase`)
   - WuKongContacts (from `./Modules/WuKongContacts`)
   - WuKongDataSource (from `./Modules/WuKongDataSource`)
+  - WuKongGroupManager (from `./Modules/WuKongGroupManager`)
   - WuKongIMSDK (from `./Modules/WuKongIMiOSSDK`)
   - WuKongLogin (from `./Modules/WuKongLogin`)
+  - WuKongMoment (from `./Modules/WuKongMoment`)
+  - WuKongRTC (from `./Modules/WuKongRTC`)
+  - WuKongSmallVideo (from `./Modules/WuKongSmallVideo`)
   - YBImageBrowser/NOSD (from `https://github.com/tangtaoit/YBImageBrowser.git`)
   - YYImage/WebP (from `https://github.com/tangtaoit/YYImage.git`)
 
@@ -197,10 +215,18 @@ EXTERNAL SOURCES:
     :path: "./Modules/WuKongContacts"
   WuKongDataSource:
     :path: "./Modules/WuKongDataSource"
+  WuKongGroupManager:
+    :path: "./Modules/WuKongGroupManager"
   WuKongIMSDK:
     :path: "./Modules/WuKongIMiOSSDK"
   WuKongLogin:
     :path: "./Modules/WuKongLogin"
+  WuKongMoment:
+    :path: "./Modules/WuKongMoment"
+  WuKongRTC:
+    :path: "./Modules/WuKongRTC"
+  WuKongSmallVideo:
+    :path: "./Modules/WuKongSmallVideo"
   YBImageBrowser:
     :git: https://github.com/tangtaoit/YBImageBrowser.git
   YYImage:
@@ -256,13 +282,17 @@ SPEC CHECKSUMS:
   WuKongBase: 6016ea1d7e677a7188addae3159f4fabf52a6a3a
   WuKongContacts: c134c3e6f8243bb6fff32382a3b2ed58418df15b
   WuKongDataSource: 46cf01983c85d1134ae19c13700928d8a980d789
+  WuKongGroupManager: 7c217f927c00d914afc2db1fc279daf2619f1fe4
   WuKongIMSDK: 9c93f5e5e5038e0f11618cb1f87c85c09edcca79
   WuKongLogin: aafe2112c28e7c69d8ba987bb05d374214a428b1
+  WuKongMoment: 507b82d61e9138f7ab622961be6df147e5cca5fb
+  WuKongRTC: 92afb0c038fe32bb8f43adba9c8ee720265943aa
+  WuKongSmallVideo: 280057437bec40076276b927bd3220f77b47e589
   YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
   YYImage: 6db68da66f20d9f169ceb94dfb9947c3867b9665
   ZLImageEditor: ee86f044fb7c5dec6b5de49eb7bb6fd42286f2ae
   ZLPhotoBrowser: 6fb0eff03c8269001e29ef233e7bdab0691e05fe
 
-PODFILE CHECKSUM: efe7648547fa8c737ff36956dbacbf4e5fd72043
+PODFILE CHECKSUM: dad41dffc40b0792f769b4ef6ae6de14c714e06a
 
 COCOAPODS: 1.16.2

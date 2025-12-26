@@ -276,9 +276,16 @@ static WKApp *_instance;
     // 配置api
     [self configApi];
     
+    // 设置 ZLPhotoUIConfiguration 的语言类型
     if([self.config.langue isEqualToString:@"zh-Hans"]) {
         [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeChineseSimplified;
-    }else{
+    } else if([self.config.langue isEqualToString:@"zh-Hant"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeChineseTraditional;
+    } else if([self.config.langue isEqualToString:@"ja"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeJapanese;
+    } else if([self.config.langue isEqualToString:@"vi"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeVietnamese;
+    } else {
         [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeEnglish;
     }
     

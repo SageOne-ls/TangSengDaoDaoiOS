@@ -27,9 +27,9 @@
 -(instancetype) init {
     self = [super init];
     if(self) {
-        self.appName = @"唐僧叨叨";
-        self.shortName = @"WuKong ID";
-        self.appID = @""; // appstore的id
+        self.appName = @"ZoomT";
+        self.shortName = @"ZoomT";
+        self.appID = @"6756879693"; // appstore的id
         self.appSchemaPrefix = @"wukong";
         self.clusterOn = YES;
         
@@ -369,7 +369,7 @@
     if(!_innerLangue) {
         NSString *lang = [[NSUserDefaults standardUserDefaults] objectForKey:@"lim_langue"];
         if(!lang || [lang isEqualToString:@""]) {
-            return @"zh-Hans";
+            return @"vi";
         }
         _innerLangue = lang;
     }
@@ -390,9 +390,16 @@
     if(needNotify) {
         [[NSNotificationCenter defaultCenter] postNotificationName:WKNOTIFY_LANG_CHANGE object:nil];
     }
+    // 设置 ZLPhotoUIConfiguration 的语言类型
     if(langue && [langue isEqualToString:@"zh-Hans"]) {
         [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeChineseSimplified;
-    }else{
+    } else if(langue && [langue isEqualToString:@"zh-Hant"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeChineseTraditional;
+    } else if(langue && [langue isEqualToString:@"ja"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeJapanese;
+    } else if(langue && [langue isEqualToString:@"vi"]) {
+        [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeVietnamese;
+    } else {
         [ZLPhotoUIConfiguration default].languageType = ZLLanguageTypeEnglish;
     }
     

@@ -20,10 +20,10 @@
             @"items":@[
                     @{
                         @"class":WKLabelItemSelectModel.class,
-                        @"label":@"简体中文",
-                        @"selected":@([langue isEqualToString:@"zh-Hans"]),
+                        @"label":@"繁體中文",
+                        @"selected":@([langue isEqualToString:@"zh-Hant"]),
                         @"onClick":^{
-                            [WKApp shared].config.langue = @"zh-Hans";
+                            [WKApp shared].config.langue = @"zh-Hant";
                             [weakSelf reloadData];
                         }
                     },
@@ -33,6 +33,24 @@
                         @"selected":@([langue isEqualToString:@"en"]),
                         @"onClick":^{
                             [WKApp shared].config.langue = @"en";
+                            [weakSelf reloadData];
+                        }
+                    },
+                    @{
+                        @"class":WKLabelItemSelectModel.class,
+                        @"label":@"日本語",
+                        @"selected":@([langue isEqualToString:@"ja"]),
+                        @"onClick":^{
+                            [WKApp shared].config.langue = @"ja";
+                            [weakSelf reloadData];
+                        }
+                    },
+                    @{
+                        @"class":WKLabelItemSelectModel.class,
+                        @"label":@"Tiếng Việt",
+                        @"selected":@([langue isEqualToString:@"vi"]),
+                        @"onClick":^{
+                            [WKApp shared].config.langue = @"vi";
                             [weakSelf reloadData];
                         }
                     }

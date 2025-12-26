@@ -396,8 +396,15 @@
     NSString *name = contacts.name;
     inputVC.defaultValue = name;
     [inputVC setOnFinish:^(NSString * _Nonnull value) {
+        // 去除首尾空格后检查是否为空
+        NSString *trimmedValue = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if (!trimmedValue || trimmedValue.length == 0) {
+            // 如果只输入了空格，提示错误并返回
+            [[[WKNavigationManager shared] topViewController].view showHUDWithHide:LLang(@"备注不能为空")];
+            return;
+        }
         
-        [[WKChannelSettingManager shared] channel:channel remark:value?:@""];
+        [[WKChannelSettingManager shared] channel:channel remark:trimmedValue];
         [[WKNavigationManager shared] popViewControllerAnimated:YES];
     }];
     [[WKNavigationManager shared] pushViewController:inputVC animated:YES];

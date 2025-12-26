@@ -1,0 +1,53 @@
+
+"联系人"="Danh bạ";
+"新的朋友"="Bạn bè mới";
+"保存的群聊"="Nhóm";
+
+"确认"="Xác nhận";
+"已确认"="Đã xác nhận";
+
+"取消"="Hủy";
+
+"%ld个朋友"="%ld bạn bè";
+
+
+// WKContactsAddMyShortCell
+
+"我的%@号：%@"="%@ ID: %@";
+
+// WKContactsAddVC
+
+"添加朋友"="Thêm danh bạ";
+"搜索"="Tìm kiếm";
+"刚刚"="Vừa";
+"%0.0f分钟"="%0.0f phút";
+
+// WKContactsInfoVC
+
+"用户详情"="Chi tiết";
+"添加好友"="Thêm danh bạ";
+"你需要发送验证码申请，等对方通过"="Bạn cần gửi đơn xin mã xác minh và chờ bên kia chấp nhận";
+"我是%@"="Tôi là %@";
+
+// WKContactsSearchVC
+
+"用户不存在！"="Người dùng không tồn tại!";
+
+
+// WKContactsVM
+
+"扫一扫"="Quét";
+"扫描二维码名片"="Quét mã QR danh thiếp";
+
+// WKMyGroupListVC
+
+"保存的群聊"="Nhóm đã lưu";
+
+
+// WKContactsSync
+
+"同步联系人"="Đồng bộ danh bạ";
+
+"手机联系人"="Sổ địa chỉ";
+"添加通讯录中的朋友"="Thêm bạn bè từ sổ địa chỉ";
+"新建群聊"="Nhóm mới";

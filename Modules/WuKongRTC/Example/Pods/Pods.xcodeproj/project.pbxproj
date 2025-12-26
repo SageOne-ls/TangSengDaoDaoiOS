@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B89CAC4C8B1037F7D33F52DA35ABB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4F0D99F9EF4DD5CD37164DFCE7CAAC23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		515E42758EAE6E451306A4502E45879B /* Pods-LiMaoRTC_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B99693BE8496F4A62D090CC401C9CFA2 /* Pods-LiMaoRTC_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6112AC31CA57926DAE0336D051D38191 /* Pods-LiMaoRTC_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5C6B3FECEDD7CB9BCA617542C75A7 /* Pods-LiMaoRTC_Tests-dummy.m */; };
+		639F571B02CA0633DE621F8DED99A4A2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1803E0D45EE2B347F195E414B7278B /* ReplaceMe.m */; };
+		72B9967236AC616B17ECA5DC0CDDA406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		72BEA68BAD5C33D12010BE8DCD0B1881 /* LiMaoRTC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8C78F7385FB1C6C7E062CE1E9FEC3 /* LiMaoRTC-dummy.m */; };
+		8294E7CD1CAB405014D33ABAC83C6555 /* Pods-LiMaoRTC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2F0ED88E371C2AB67A588CABE4602 /* Pods-LiMaoRTC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3CC100ECFE7EAF68579DFCD8F07A306 /* Pods-LiMaoRTC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AC12FF9B9AF777A808303004805F /* Pods-LiMaoRTC_Example-dummy.m */; };
+		EE3747E625CFA14A96CD88360B8D5B5E /* LiMaoRTC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B28A75C3587F393C91BAD84B53E791 /* LiMaoRTC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		508FBCFF150A4373758D8777C49B05E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7927D6C0E7D2A68CA10AA68B0C2B784;
+			remoteInfo = "Pods-LiMaoRTC_Example";
+		};
+		FC0E721385160130A75820A24E41D7DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06CDBEDC4370EBEE122CD7C8F4360B40;
+			remoteInfo = LiMaoRTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06D5C6B3FECEDD7CB9BCA617542C75A7 /* Pods-LiMaoRTC_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiMaoRTC_Tests-dummy.m"; sourceTree = "<group>"; };
+		0DA6AE60995B9CF04698715989E27EE0 /* Pods-LiMaoRTC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoRTC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F87E0E84637F9FA066E0DB3523EBC0C /* Pods-LiMaoRTC_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiMaoRTC_Tests.modulemap"; sourceTree = "<group>"; };
+		10B28A75C3587F393C91BAD84B53E791 /* LiMaoRTC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiMaoRTC-umbrella.h"; sourceTree = "<group>"; };
+		11D1BB7858A419AE7B98DEF51966C849 /* Pods-LiMaoRTC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoRTC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		180D3C80FD597D6A6F59C763E0FA8E5C /* Pods-LiMaoRTC_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoRTC_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BDC1FF8D7A326FF502842FB3FA44ADE /* Pods_LiMaoRTC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiMaoRTC_Tests.framework; path = "Pods-LiMaoRTC_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27000C3F202D4BBE49ED3C75760941D3 /* Pods-LiMaoRTC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiMaoRTC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DE0AC12FF9B9AF777A808303004805F /* Pods-LiMaoRTC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiMaoRTC_Example-dummy.m"; sourceTree = "<group>"; };
+		2FC695D57CE2FCE993E449221BFE898A /* LiMaoRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiMaoRTC.release.xcconfig; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		34EC1423DEF8C5AF90043F86F6C6F089 /* LiMaoRTC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiMaoRTC-Info.plist"; sourceTree = "<group>"; };
+		355D199CD098C0F329C1A3F3FCEB8BB1 /* Pods-LiMaoRTC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoRTC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C2E186B60D6EED002D67A26756A4B4E /* Pods-LiMaoRTC_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoRTC_Tests-Info.plist"; sourceTree = "<group>"; };
+		5A13756381E3B15C94A40DB5269B049A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		68E1DAFCE37A05A03A189E255D173A7A /* LiMaoRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiMaoRTC.debug.xcconfig; sourceTree = "<group>"; };
+		89A8C78F7385FB1C6C7E062CE1E9FEC3 /* LiMaoRTC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiMaoRTC-dummy.m"; sourceTree = "<group>"; };
+		8B85500A2031F62FDA059F597C64CC97 /* LiMaoRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiMaoRTC.framework; path = LiMaoRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1803E0D45EE2B347F195E414B7278B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LiMaoRTC/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		9ABF2AFBD45F84883419CA4ADE8E6A26 /* Pods-LiMaoRTC_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoRTC_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2C91F767FB8BDD00806FD81939F679A /* LiMaoRTC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiMaoRTC-prefix.pch"; sourceTree = "<group>"; };
+		A7F6623C722F1110E797BA1B7C9E8A3C /* LiMaoRTC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiMaoRTC.modulemap; sourceTree = "<group>"; };
+		B3F2AA67A524D92142E8F61AADD99FC1 /* Pods-LiMaoRTC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiMaoRTC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4C2F0ED88E371C2AB67A588CABE4602 /* Pods-LiMaoRTC_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiMaoRTC_Example-umbrella.h"; sourceTree = "<group>"; };
+		B99693BE8496F4A62D090CC401C9CFA2 /* Pods-LiMaoRTC_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiMaoRTC_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C11F9A807AC7438089E336B45736854E /* Pods-LiMaoRTC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiMaoRTC_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C96F99FB71493799395F91FAF30F7C1E /* Pods-LiMaoRTC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiMaoRTC_Example.modulemap"; sourceTree = "<group>"; };
+		CDF02D641F22965D3D632BF43A95D783 /* LiMaoRTC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LiMaoRTC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E0687819B49F20DBC489DB30AEDAE260 /* Pods-LiMaoRTC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiMaoRTC_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E64E1B4EADABE0E18CF26C25BB77C122 /* Pods_LiMaoRTC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiMaoRTC_Example.framework; path = "Pods-LiMaoRTC_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FA22A3AC8421B4235DC608480D9C2C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FE37809037E64C53124AC5AD15CE15EA /* Pods-LiMaoRTC_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiMaoRTC_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E4D1EA9BA498860980B854CDC67D011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72B9967236AC616B17ECA5DC0CDDA406 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CADA43767B4636DCC719D2DFAA4ECAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0D99F9EF4DD5CD37164DFCE7CAAC23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34CD63444A646F3047B7D1E7C0D7F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B89CAC4C8B1037F7D33F52DA35ABB11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039F6EFCC6F5791C3A613F55981CA187 /* Pods-LiMaoRTC_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F87E0E84637F9FA066E0DB3523EBC0C /* Pods-LiMaoRTC_Tests.modulemap */,
+				FE37809037E64C53124AC5AD15CE15EA /* Pods-LiMaoRTC_Tests-acknowledgements.markdown */,
+				180D3C80FD597D6A6F59C763E0FA8E5C /* Pods-LiMaoRTC_Tests-acknowledgements.plist */,
+				06D5C6B3FECEDD7CB9BCA617542C75A7 /* Pods-LiMaoRTC_Tests-dummy.m */,
+				3C2E186B60D6EED002D67A26756A4B4E /* Pods-LiMaoRTC_Tests-Info.plist */,
+				B99693BE8496F4A62D090CC401C9CFA2 /* Pods-LiMaoRTC_Tests-umbrella.h */,
+				0DA6AE60995B9CF04698715989E27EE0 /* Pods-LiMaoRTC_Tests.debug.xcconfig */,
+				11D1BB7858A419AE7B98DEF51966C849 /* Pods-LiMaoRTC_Tests.release.xcconfig */,
+			);
+			name = "Pods-LiMaoRTC_Tests";
+			path = "Target Support Files/Pods-LiMaoRTC_Tests";
+			sourceTree = "<group>";
+		};
+		1C5F1D5CAF5E16AF2373E325BB50136C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B85500A2031F62FDA059F597C64CC97 /* LiMaoRTC.framework */,
+				E64E1B4EADABE0E18CF26C25BB77C122 /* Pods_LiMaoRTC_Example.framework */,
+				1BDC1FF8D7A326FF502842FB3FA44ADE /* Pods_LiMaoRTC_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DAF7B6DA043305BA12DA4CEC2EED71B /* Pods-LiMaoRTC_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C96F99FB71493799395F91FAF30F7C1E /* Pods-LiMaoRTC_Example.modulemap */,
+				27000C3F202D4BBE49ED3C75760941D3 /* Pods-LiMaoRTC_Example-acknowledgements.markdown */,
+				B3F2AA67A524D92142E8F61AADD99FC1 /* Pods-LiMaoRTC_Example-acknowledgements.plist */,
+				2DE0AC12FF9B9AF777A808303004805F /* Pods-LiMaoRTC_Example-dummy.m */,
+				E0687819B49F20DBC489DB30AEDAE260 /* Pods-LiMaoRTC_Example-frameworks.sh */,
+				9ABF2AFBD45F84883419CA4ADE8E6A26 /* Pods-LiMaoRTC_Example-Info.plist */,
+				B4C2F0ED88E371C2AB67A588CABE4602 /* Pods-LiMaoRTC_Example-umbrella.h */,
+				C11F9A807AC7438089E336B45736854E /* Pods-LiMaoRTC_Example.debug.xcconfig */,
+				355D199CD098C0F329C1A3F3FCEB8BB1 /* Pods-LiMaoRTC_Example.release.xcconfig */,
+			);
+			name = "Pods-LiMaoRTC_Example";
+			path = "Target Support Files/Pods-LiMaoRTC_Example";
+			sourceTree = "<group>";
+		};
+		4C3128A755406F94E64BAE8CBC62B219 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F0FA22A3AC8421B4235DC608480D9C2C /* LICENSE */,
+				CDF02D641F22965D3D632BF43A95D783 /* LiMaoRTC.podspec */,
+				5A13756381E3B15C94A40DB5269B049A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9A6A6ACA10434EBDE4E09CEED0840B31 /* LiMaoRTC */ = {
+			isa = PBXGroup;
+			children = (
+				8F1803E0D45EE2B347F195E414B7278B /* ReplaceMe.m */,
+				4C3128A755406F94E64BAE8CBC62B219 /* Pod */,
+				E406A9BC6ECA7685EBF66ADF1AAF1B82 /* Support Files */,
+			);
+			name = LiMaoRTC;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BA2D5FDB545373A3FA9AB29A3CAC65AD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A6A6ACA10434EBDE4E09CEED0840B31 /* LiMaoRTC */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA2D5FDB545373A3FA9AB29A3CAC65AD /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1C5F1D5CAF5E16AF2373E325BB50136C /* Products */,
+				F132E102C5084689DB4451D3E1F43121 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E406A9BC6ECA7685EBF66ADF1AAF1B82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7F6623C722F1110E797BA1B7C9E8A3C /* LiMaoRTC.modulemap */,
+				89A8C78F7385FB1C6C7E062CE1E9FEC3 /* LiMaoRTC-dummy.m */,
+				34EC1423DEF8C5AF90043F86F6C6F089 /* LiMaoRTC-Info.plist */,
+				A2C91F767FB8BDD00806FD81939F679A /* LiMaoRTC-prefix.pch */,
+				10B28A75C3587F393C91BAD84B53E791 /* LiMaoRTC-umbrella.h */,
+				68E1DAFCE37A05A03A189E255D173A7A /* LiMaoRTC.debug.xcconfig */,
+				2FC695D57CE2FCE993E449221BFE898A /* LiMaoRTC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiMaoRTC";
+			sourceTree = "<group>";
+		};
+		F132E102C5084689DB4451D3E1F43121 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DAF7B6DA043305BA12DA4CEC2EED71B /* Pods-LiMaoRTC_Example */,
+				039F6EFCC6F5791C3A613F55981CA187 /* Pods-LiMaoRTC_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43B6B92155782FD03609C07A56ACF8F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3747E625CFA14A96CD88360B8D5B5E /* LiMaoRTC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB81766C03CF58BE852CBBFA2DCA9BF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8294E7CD1CAB405014D33ABAC83C6555 /* Pods-LiMaoRTC_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FD22B25CC0F93B4A52F8CE31AF2EE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515E42758EAE6E451306A4502E45879B /* Pods-LiMaoRTC_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06CDBEDC4370EBEE122CD7C8F4360B40 /* LiMaoRTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93192C1F8F8DBD7A5CDCF621AFAB9A82 /* Build configuration list for PBXNativeTarget "LiMaoRTC" */;
+			buildPhases = (
+				43B6B92155782FD03609C07A56ACF8F7 /* Headers */,
+				1E17927D194B9FBE25B567AAD2B338C5 /* Sources */,
+				0E4D1EA9BA498860980B854CDC67D011 /* Frameworks */,
+				8F1353B2AA9338E3AFFF34FD059288A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiMaoRTC;
+			productName = LiMaoRTC;
+			productReference = 8B85500A2031F62FDA059F597C64CC97 /* LiMaoRTC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		854392F45E2B90C1B73E152FB52144F3 /* Pods-LiMaoRTC_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1425B313A5991FFA269BB1EE85006339 /* Build configuration list for PBXNativeTarget "Pods-LiMaoRTC_Tests" */;
+			buildPhases = (
+				F7FD22B25CC0F93B4A52F8CE31AF2EE2 /* Headers */,
+				0B8A36343D96F16DF68931FDEEE4F0B7 /* Sources */,
+				8CADA43767B4636DCC719D2DFAA4ECAC /* Frameworks */,
+				D120CC45DCD45EE85A6B9730503E7CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847B39D6CCE6E54749432BA3465024E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiMaoRTC_Tests";
+			productName = "Pods-LiMaoRTC_Tests";
+			productReference = 1BDC1FF8D7A326FF502842FB3FA44ADE /* Pods_LiMaoRTC_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7927D6C0E7D2A68CA10AA68B0C2B784 /* Pods-LiMaoRTC_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3094348043987011D9E253D291451771 /* Build configuration list for PBXNativeTarget "Pods-LiMaoRTC_Example" */;
+			buildPhases = (
+				CB81766C03CF58BE852CBBFA2DCA9BF9 /* Headers */,
+				B8B69BA79EAF08B617A7A99689F99773 /* Sources */,
+				C34CD63444A646F3047B7D1E7C0D7F12 /* Frameworks */,
+				62B8B16F8CC6339EAE1FB0F475B9FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CDFCD981009297AD379756E75639A9C /* PBXTargetDependency */,
+			);
+			name = "Pods-LiMaoRTC_Example";
+			productName = "Pods-LiMaoRTC_Example";
+			productReference = E64E1B4EADABE0E18CF26C25BB77C122 /* Pods_LiMaoRTC_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C5F1D5CAF5E16AF2373E325BB50136C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06CDBEDC4370EBEE122CD7C8F4360B40 /* LiMaoRTC */,
+				B7927D6C0E7D2A68CA10AA68B0C2B784 /* Pods-LiMaoRTC_Example */,
+				854392F45E2B90C1B73E152FB52144F3 /* Pods-LiMaoRTC_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62B8B16F8CC6339EAE1FB0F475B9FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1353B2AA9338E3AFFF34FD059288A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D120CC45DCD45EE85A6B9730503E7CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B8A36343D96F16DF68931FDEEE4F0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6112AC31CA57926DAE0336D051D38191 /* Pods-LiMaoRTC_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E17927D194B9FBE25B567AAD2B338C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BEA68BAD5C33D12010BE8DCD0B1881 /* LiMaoRTC-dummy.m in Sources */,
+				639F571B02CA0633DE621F8DED99A4A2 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8B69BA79EAF08B617A7A99689F99773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CC100ECFE7EAF68579DFCD8F07A306 /* Pods-LiMaoRTC_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CDFCD981009297AD379756E75639A9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiMaoRTC;
+			target = 06CDBEDC4370EBEE122CD7C8F4360B40 /* LiMaoRTC */;
+			targetProxy = FC0E721385160130A75820A24E41D7DD /* PBXContainerItemProxy */;
+		};
+		847B39D6CCE6E54749432BA3465024E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LiMaoRTC_Example";
+			target = B7927D6C0E7D2A68CA10AA68B0C2B784 /* Pods-LiMaoRTC_Example */;
+			targetProxy = 508FBCFF150A4373758D8777C49B05E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DB7776469B02E2F7FB21AB5144BC4F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11F9A807AC7438089E336B45736854E /* Pods-LiMaoRTC_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoRTC_Example/Pods-LiMaoRTC_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoRTC_Example/Pods-LiMaoRTC_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BBE4EE4F3918F711EC206AAADB17622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E1DAFCE37A05A03A189E255D173A7A /* LiMaoRTC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiMaoRTC/LiMaoRTC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiMaoRTC/LiMaoRTC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiMaoRTC/LiMaoRTC.modulemap";
+				PRODUCT_MODULE_NAME = LiMaoRTC;
+				PRODUCT_NAME = LiMaoRTC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A466FD4EDC2500435EF1658BBBDBCA1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D1BB7858A419AE7B98DEF51966C849 /* Pods-LiMaoRTC_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoRTC_Tests/Pods-LiMaoRTC_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoRTC_Tests/Pods-LiMaoRTC_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE6A877185BE7AD62864206DC2183504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC695D57CE2FCE993E449221BFE898A /* LiMaoRTC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiMaoRTC/LiMaoRTC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiMaoRTC/LiMaoRTC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiMaoRTC/LiMaoRTC.modulemap";
+				PRODUCT_MODULE_NAME = LiMaoRTC;
+				PRODUCT_NAME = LiMaoRTC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C29BF8027C15BA8A45EB9765E5A1A794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355D199CD098C0F329C1A3F3FCEB8BB1 /* Pods-LiMaoRTC_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoRTC_Example/Pods-LiMaoRTC_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoRTC_Example/Pods-LiMaoRTC_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8109294569897EF6232F5943DF43751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA6AE60995B9CF04698715989E27EE0 /* Pods-LiMaoRTC_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiMaoRTC_Tests/Pods-LiMaoRTC_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiMaoRTC_Tests/Pods-LiMaoRTC_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1425B313A5991FFA269BB1EE85006339 /* Build configuration list for PBXNativeTarget "Pods-LiMaoRTC_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8109294569897EF6232F5943DF43751 /* Debug */,
+				A466FD4EDC2500435EF1658BBBDBCA1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3094348043987011D9E253D291451771 /* Build configuration list for PBXNativeTarget "Pods-LiMaoRTC_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB7776469B02E2F7FB21AB5144BC4F7 /* Debug */,
+				C29BF8027C15BA8A45EB9765E5A1A794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93192C1F8F8DBD7A5CDCF621AFAB9A82 /* Build configuration list for PBXNativeTarget "LiMaoRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBE4EE4F3918F711EC206AAADB17622 /* Debug */,
+				AE6A877185BE7AD62864206DC2183504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

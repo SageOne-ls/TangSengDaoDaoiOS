@@ -1,0 +1,6 @@
+framework module WuKongRTC {
+  umbrella header "WuKongRTC-umbrella.h"
+
+  export *
+  module * { export * }
+}

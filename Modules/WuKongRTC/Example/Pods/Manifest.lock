@@ -1,0 +1,16 @@
+PODS:
+  - LiMaoRTC (0.1.0)
+
+DEPENDENCIES:
+  - LiMaoRTC (from `../`)
+
+EXTERNAL SOURCES:
+  LiMaoRTC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LiMaoRTC: 74c1960c1c76f72bdf46d7e6de9b8fb49c7c9428
+
+PODFILE CHECKSUM: 3a6a0f39bb92fccea957fc4c0dfbf78b4cb5d76e
+
+COCOAPODS: 1.9.3
