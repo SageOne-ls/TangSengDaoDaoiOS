@@ -369,7 +369,7 @@
     if(!_innerLangue) {
         NSString *lang = [[NSUserDefaults standardUserDefaults] objectForKey:@"lim_langue"];
         if(!lang || [lang isEqualToString:@""]) {
-            return @"vi";
+            return @"en";
         }
         _innerLangue = lang;
     }

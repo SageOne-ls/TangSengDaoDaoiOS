@@ -80,7 +80,9 @@ static int lastGetCodeTimestamp = 0; // 最后一次获取验证码的时间戳�
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBar.hidden = YES;
-     _country = @"86";
+    // Support the following country codes: 1, 86, 85
+    // Default country code: 1 (United States)
+     _country = @"1";
     [self.view addSubview:self.bgImgView];
     [self.view addSubview:self.titleLbl];
     

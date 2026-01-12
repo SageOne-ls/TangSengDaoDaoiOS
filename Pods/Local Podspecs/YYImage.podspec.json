@@ -39,9 +39,7 @@
     {
       "name": "WebP",
       "dependencies": {
-        "YYImage/Core": [
-
-        ]
+        "YYImage/Core": []
       },
       "ios": {
         "vendored_frameworks": "Vendor/WebP.framework"
@@ -50,12 +48,8 @@
     {
       "name": "libwebp",
       "dependencies": {
-        "YYImage/Core": [
-
-        ],
-        "libwebp": [
-
-        ]
+        "YYImage/Core": [],
+        "libwebp": []
       },
       "xcconfig": {
         "USER_HEADER_SEARCH_PATHS": "$(inherited) $(SRCROOT)/libwebp/src"

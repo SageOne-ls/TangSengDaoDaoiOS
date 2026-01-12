@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66723BE8273958A08E55D66A /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B97C25084D4A46A704F7627 /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */; };
 		7130BFC524C6817600B9E04B /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7130BFC424C6817600B9E04B /* NotificationService.m */; };
 		7130BFC924C6817600B9E04B /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7130BFC124C6817600B9E04B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7130BFD424C6832F00B9E04B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7130BFD324C6832F00B9E04B /* UserNotifications.framework */; };
@@ -40,7 +41,6 @@
 		71D6961623926E3700D092BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D6961523926E3700D092BA /* main.m */; };
 		71DB3FA6239B5DE700181E94 /* WKMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DB3FA5239B5DE700181E94 /* WKMainTabController.m */; };
 		71F7E3DC2A47F66900E8D20D /* QUESTION.md in Resources */ = {isa = PBXBuildFile; fileRef = 71F7E3DB2A47F66900E8D20D /* QUESTION.md */; };
-		EE1BF60007AE888BBCD21EE8 /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA0841FAD4ACC73F9DC603F /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5CA0841FAD4ACC73F9DC603F /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71018ED405ABC6ED8448075E /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; path = "Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; sourceTree = "<group>"; };
+		59A44F37E3682CBEB192075A /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig"; path = "Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		71275E7D240A7BD600A7502C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71275E7F240A7BDB00A7502C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		71275E81240A7C2400A7502C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,7 +127,8 @@
 		71DB3FA4239B5DE700181E94 /* WKMainTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKMainTabController.h; sourceTree = "<group>"; };
 		71DB3FA5239B5DE700181E94 /* WKMainTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKMainTabController.m; sourceTree = "<group>"; };
 		71F7E3DB2A47F66900E8D20D /* QUESTION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUESTION.md; sourceTree = "<group>"; };
-		DE5455F84CCB2C45ED689AA0 /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig"; path = "Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7B97C25084D4A46A704F7627 /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF9601F111B938A05F0028C /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; path = "Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 				71D140B6251EEAF00000137A /* libz.tbd in Frameworks */,
 				7132A163240ABB92007F9BE2 /* libc.tbd in Frameworks */,
 				7132A15C240AB4B8007F9BE2 /* libc++.tbd in Frameworks */,
-				EE1BF60007AE888BBCD21EE8 /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework in Frameworks */,
+				66723BE8273958A08E55D66A /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 				71275E7D240A7BD600A7502C /* UIKit.framework */,
 				7130BFD324C6832F00B9E04B /* UserNotifications.framework */,
 				7130BFD524C6832F00B9E04B /* UserNotificationsUI.framework */,
-				5CA0841FAD4ACC73F9DC603F /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */,
+				7B97C25084D4A46A704F7627 /* Pods_TangSengDaoDaoiOSBase_TangSengDaoDaoiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,8 +289,8 @@
 		D0600169DB45E883707B86A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE5455F84CCB2C45ED689AA0 /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */,
-				71018ED405ABC6ED8448075E /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */,
+				59A44F37E3682CBEB192075A /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */,
+				8AF9601F111B938A05F0028C /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -336,12 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71D6962F23926E3700D092BA /* Build configuration list for PBXNativeTarget "TangSengDaoDaoiOS" */;
 			buildPhases = (
-				05215A064B84F8912C5000D5 /* [CP] Check Pods Manifest.lock */,
+				E1D4AB6F904202E246A75AF7 /* [CP] Check Pods Manifest.lock */,
 				71D695FF23926E3500D092BA /* Sources */,
 				71D6960023926E3500D092BA /* Frameworks */,
 				71D6960123926E3500D092BA /* Resources */,
 				7130BFCD24C6817600B9E04B /* Embed App Extensions */,
-				410EB1233C71A847B3317F56 /* [CP] Embed Pods Frameworks */,
+				7A7945362508368933E9936D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,7 +430,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05215A064B84F8912C5000D5 /* [CP] Check Pods Manifest.lock */ = {
+		7A7945362508368933E9936D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D4AB6F904202E246A75AF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,27 +471,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		410EB1233C71A847B3317F56 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS/Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -560,7 +560,6 @@
 		7130BFCB24C6817600B9E04B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -584,7 +583,6 @@
 		7130BFCC24C6817600B9E04B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -608,7 +606,6 @@
 		7130BFE324C6832F00B9E04B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -632,7 +629,6 @@
 		7130BFE424C6832F00B9E04B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -785,7 +781,7 @@
 		};
 		71D6963023926E3700D092BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE5455F84CCB2C45ED689AA0 /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */;
+			baseConfigurationReference = 59A44F37E3682CBEB192075A /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -793,7 +789,7 @@
 				CODE_SIGN_ENTITLEMENTS = TangSengDaoDao/TangSengDaoDao.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 123;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6ZGXGQ2Y5J;
 				ENABLE_BITCODE = NO;
@@ -896,7 +892,7 @@
 		};
 		71D6963123926E3700D092BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71018ED405ABC6ED8448075E /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */;
+			baseConfigurationReference = 8AF9601F111B938A05F0028C /* Pods-TangSengDaoDaoiOSBase-TangSengDaoDaoiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -904,7 +900,7 @@
 				CODE_SIGN_ENTITLEMENTS = TangSengDaoDao/TangSengDaoDao.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 101;
+				CURRENT_PROJECT_VERSION = 123;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6ZGXGQ2Y5J;
 				ENABLE_BITCODE = NO;

@@ -33,8 +33,8 @@
 "请输入登录密码"="Vui lòng nhập mật khẩu của bạn";
 "忘记密码?"="Quên?";
 "新用户？请"="Người dùng mới? vui lòng";
-"已有账号？请"="Đã có tài khoản? Vui lòng";
-"注册"="đăng ký";
+"已有账号？请"="Already have an account? Please";
+"注册"="Register";
 "完善个人资料"="Cải thiện thông tin cá nhân";
 "请设置你的个人头像和昵称"="Vui lòng đặt ảnh đại diện và biệt danh của bạn";
 "名字(必填)"="Tên (bắt buộc)";
@@ -50,6 +50,6 @@
 "注册中"="Đang đăng ký";
 "邀请码（选填）"="Mã mời (tùy chọn)";
 "邀请码（必填）"="Mã mời (bắt buộc)";
-"点击“注册”即表示已阅读并同意"="Bấm \"đăng ký\" có nghĩa là bạn đã đọc và đồng ý";
-"用户协议"="Thỏa thuận người dùng";
-"隐私政策"="Chính sách bảo mật";
+"点击“注册”即表示已阅读并同意"="By clicking \"Register\", you agree to the";
+"用户协议"="User Agreement";
+"隐私政策"="Privacy Policy";

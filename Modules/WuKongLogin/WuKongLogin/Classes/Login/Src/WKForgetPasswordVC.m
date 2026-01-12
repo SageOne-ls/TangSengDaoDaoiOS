@@ -97,9 +97,11 @@ static int lastGetCodeTimestamp = 0; // 最后一次获取验证码的时间戳�
     
 }
 
+// Support the following country codes: 1, 86, 85
+// Default country code: 1 (United States)
 - (NSString *)country {
     if(!_country) {
-        return @"86";
+        return @"1";
     }
     return _country;
 }

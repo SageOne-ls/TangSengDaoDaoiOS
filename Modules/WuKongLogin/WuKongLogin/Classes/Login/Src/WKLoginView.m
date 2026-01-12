@@ -49,7 +49,9 @@
     self = [super initWithFrame:frame];
     if (!self) return nil;
     
-    _country = @"86";
+    // Support the following country codes: 1, 86, 85
+    // Default country code: 1 (United States)
+    _country = @"1";
     
     [self addSubview:self.bgImgView];
     [self addSubview:self.welcomeTitleLbl];

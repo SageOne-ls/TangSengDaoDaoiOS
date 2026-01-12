@@ -23,9 +23,7 @@
       "source_files": "YBImageBrowser/**/*.{h,m}",
       "resources": "YBImageBrowser/YBImageBrowser.bundle",
       "dependencies": {
-        "YYImage": [
-
-        ],
+        "YYImage": [],
         "SDWebImage": [
           ">= 5.0.0"
         ]
@@ -37,9 +35,7 @@
       "exclude_files": "YBImageBrowser/WebImageMediator/YBIBDefaultWebImageMediator.{h,m}",
       "resources": "YBImageBrowser/YBImageBrowser.bundle",
       "dependencies": {
-        "YYImage": [
-
-        ]
+        "YYImage": []
       }
     },
     {
@@ -47,9 +43,7 @@
       "source_files": "Video/*.{h,m}",
       "resources": "Video/YBImageBrowserVideo.bundle",
       "dependencies": {
-        "YBImageBrowser/Core": [
-
-        ]
+        "YBImageBrowser/Core": []
       }
     },
     {
@@ -57,9 +51,7 @@
       "source_files": "Video/*.{h,m}",
       "resources": "Video/YBImageBrowserVideo.bundle",
       "dependencies": {
-        "YBImageBrowser/NOSD": [
-
-        ]
+        "YBImageBrowser/NOSD": []
       }
     }
   ]

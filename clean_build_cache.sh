@@ -41,3 +41,6 @@ echo "- Assets.xcassets/launch.imageset/ 中的图片是否正确"
 echo "- Info.plist 中的 UILaunchStoryboardName 是否为 'LaunchScreen'"
 
 
+
+
+
